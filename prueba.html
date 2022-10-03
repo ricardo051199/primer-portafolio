@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-header{
+            background-color: orange;
+            padding: 2rem;
+            flex-basis: 0%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        .flex-main{
+            background-color: green;
+            flex-basis: 0%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-nav{
+            background-color: aqua;
+            flex-basis: 0%;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .flex-article{
+            background-color: chartreuse;
+            flex-basis: 0%;
+            flex-grow: 4;
+            flex-shrink: 1;
+        }
+        .flex-aside{
+            background-color: firebrick;
+            flex-basis: 0%;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .flex-footer{
+            padding: 2rem;
+            background-color:blueviolet;
+            flex-basis: 0%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        @media (max-width: 450px){
+            .flex-main{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="flex-header">
+        ENCABEZADO
+    </header>    
+    <main class="flex-main">
+        <nav class="flex-nav">
+            ENLACES
+        </nav>
+        <article class="flex-article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint officia cumque labore magni fugit atque inventore neque id soluta dolor eveniet incidunt odit reiciendis temporibus esse laboriosam, ut aliquid?</p>    
+        </article>
+        <aside class="flex-aside">
+            PROPAGANDA    
+        </aside>
+    </main>
+    <footer class="flex-footer">
+        PIE
+    </footer>
+</body>
+</html>
